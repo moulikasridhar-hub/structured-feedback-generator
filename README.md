@@ -5,6 +5,18 @@ A FastAPI-based backend application that automates recruiter-friendly feedback r
 ## 🚀 Features
 - **Automated Calculations:** Automatically averages evaluation metrics and generates hiring recommendations.
 - **Edge-Case Resilience:** Gracefully handles missing/null evaluation metrics without crashing the application.
+- **FastAPI Backend:** Lightweight and high-performance API framework.
+- **Structured Output:** Returns clean, structured JSON responses for feedback reports.
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- FastAPI
+- Uvicorn
+
+---
 
 ## 🛠️ Setup & Installation
 
