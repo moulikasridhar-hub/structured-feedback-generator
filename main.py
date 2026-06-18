@@ -44,10 +44,16 @@ def generate_feedback(candidate: Candidate):
         recommendation = "Consider for Further Evaluation"
     else:
         recommendation = "Not Recommended"
+        
+    summary = "Candidate evaluation completed."    
 
     # 5. Automated Structured Output
     return {
-        "candidate_name": candidate.candidate_name,
-        "overall_rating": round(overall, 2),
-        "recommendation": recommendation
+    "candidate_name": candidate.candidate_name,
+    "technical_skills_score": candidate.technical_skills,
+    "communication_score": candidate.communication,
+    "problem_solving_score": candidate.problem_solving,
+    "overall_rating": round(overall, 2),
+    "recommendation": recommendation,
+    "summary": "Strong technical and problem-solving skills. Communication could be improved."
     }
